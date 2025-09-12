@@ -2,6 +2,7 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Heart, ArrowDown } from 'lucide-react';
 import animalsTogetherImage from '@/assets/animals-together.jpg';
+import oneBowlLogo from '@/assets/onebowl-logo.png';
 
 const HeroSection = () => {
   const scrollToAnimals = () => {
@@ -23,14 +24,20 @@ const HeroSection = () => {
       
       {/* Content */}
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto animate-fade-in">
-        <div className="mb-8 inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-6 py-3 text-white">
-          <Heart className="w-5 h-5 text-nature-secondary" fill="currentColor" />
-          <span className="text-sm font-medium">Make a difference today</span>
+        <div className="mb-8 flex flex-col items-center gap-4">
+          <img 
+            src={oneBowlLogo} 
+            alt="OneBowl Logo" 
+            className="w-20 h-20 md:w-24 md:h-24 object-contain"
+          />
+          <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-6 py-3 text-white">
+            <Heart className="w-5 h-5 text-nature-secondary" fill="currentColor" />
+            <span className="text-sm font-medium">One bowl, endless compassion</span>
+          </div>
         </div>
         
         <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-          Feed a Friend
-          <span className="block text-nature-secondary">Today</span>
+          <span className="text-nature-secondary">One</span>Bowl
         </h1>
         
         <p className="text-xl md:text-2xl text-white/90 mb-12 max-w-3xl mx-auto leading-relaxed">
