@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
 import { Heart, ShoppingCart, Camera, Gift } from 'lucide-react';
 
@@ -96,6 +97,7 @@ const HowItWorks = () => {
           </Button>
         </div>
       </section>
+      <Footer />
     </div>
   );
 };

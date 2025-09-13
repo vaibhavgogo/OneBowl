@@ -1,4 +1,5 @@
 import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 import HeroSection from '@/components/HeroSection';
 import AnimalsSection from '@/components/AnimalsSection';
 import StatsSection from '@/components/StatsSection';
@@ -12,6 +13,7 @@ const Index = () => {
       <AnimalsSection />
       <HowItWorksSection />
       <StatsSection />
+      <Footer />
     </div>
   );
 };

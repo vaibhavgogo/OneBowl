@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Heart, Menu, X, User } from 'lucide-react';
-import oneBowlLogo from '@/assets/onebowl-logo.png';
+import lavLogo from '@/assets/lav-logo.png';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,8 +18,8 @@ const Navbar = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
             <img 
-              src={oneBowlLogo} 
-              alt="OneBowl Logo" 
+              src={lavLogo} 
+              alt="LAV Company Logo" 
               className="w-8 h-8 object-contain"
             />
             <span className="text-xl font-bold text-white">OneBowl</span>

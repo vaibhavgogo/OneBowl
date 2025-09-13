@@ -2,7 +2,7 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Heart, ArrowDown } from 'lucide-react';
 import animalsTogetherImage from '@/assets/animals-together.jpg';
-import oneBowlLogo from '@/assets/onebowl-logo.png';
+import lavLogo from '@/assets/lav-logo.png';
 
 const HeroSection = () => {
   const scrollToAnimals = () => {
@@ -26,8 +26,8 @@ const HeroSection = () => {
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto animate-fade-in">
         <div className="mb-8 flex flex-col items-center gap-4">
           <img 
-            src={oneBowlLogo} 
-            alt="OneBowl Logo" 
+            src={lavLogo} 
+            alt="LAV Company Logo" 
             className="w-20 h-20 md:w-24 md:h-24 object-contain"
           />
           <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-6 py-3 text-white">
