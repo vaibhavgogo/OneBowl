@@ -16,6 +16,11 @@ Donors can select animals (dogs, cats, cows, monkeys, etc.), choose food items, 
 
 ---
 
+## 🖼 Demo
+
+![Animal Selection Demo](./demo/1.jpg)
+
+
 ## 🚀 Tech Stack
 
 ### Frontend
