@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Heart, Menu, X, User } from 'lucide-react';
 import oneBowlLogo from '@/assets/onebowl-logo.png';
@@ -15,26 +16,26 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="flex items-center gap-3">
+          <Link to="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
             <img 
               src={oneBowlLogo} 
               alt="OneBowl Logo" 
               className="w-8 h-8 object-contain"
             />
             <span className="text-xl font-bold text-white">OneBowl</span>
-          </div>
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
-            <a href="#how-it-works" className="text-white/90 hover:text-white transition-colors">
+            <Link to="/how-it-works" className="text-white/90 hover:text-white transition-colors">
               How It Works
-            </a>
-            <a href="#impact" className="text-white/90 hover:text-white transition-colors">
+            </Link>
+            <Link to="/impact" className="text-white/90 hover:text-white transition-colors">
               Impact
-            </a>
-            <a href="#about" className="text-white/90 hover:text-white transition-colors">
+            </Link>
+            <Link to="/about" className="text-white/90 hover:text-white transition-colors">
               About
-            </a>
+            </Link>
           </div>
 
           {/* Desktop Auth Buttons */}
@@ -68,24 +69,27 @@ const Navbar = () => {
         {isMenuOpen && (
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 bg-white/10 backdrop-blur-md rounded-lg mt-2 border border-white/20">
-              <a 
-                href="#how-it-works" 
+              <Link 
+                to="/how-it-works" 
                 className="block px-3 py-2 text-white/90 hover:text-white hover:bg-white/10 rounded-md transition-colors"
+                onClick={() => setIsMenuOpen(false)}
               >
                 How It Works
-              </a>
-              <a 
-                href="#impact" 
+              </Link>
+              <Link 
+                to="/impact" 
                 className="block px-3 py-2 text-white/90 hover:text-white hover:bg-white/10 rounded-md transition-colors"
+                onClick={() => setIsMenuOpen(false)}
               >
                 Impact
-              </a>
-              <a 
-                href="#about" 
+              </Link>
+              <Link 
+                to="/about" 
                 className="block px-3 py-2 text-white/90 hover:text-white hover:bg-white/10 rounded-md transition-colors"
+                onClick={() => setIsMenuOpen(false)}
               >
                 About
-              </a>
+              </Link>
               <div className="border-t border-white/20 pt-3 mt-3">
                 <div className="flex flex-col gap-2 px-3">
                   <Button 
