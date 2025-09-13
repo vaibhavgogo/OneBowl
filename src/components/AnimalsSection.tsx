@@ -4,7 +4,7 @@ import dogImage from '@/assets/dog-hero.jpg';
 import catImage from '@/assets/cat-hero.jpg';
 import cowImage from '@/assets/cow-hero.jpg';
 import monkeyImage from '@/assets/monkey-hero.jpg';
-import goatImage from '@/assets/goat-hero.jpg';
+import birdImage from '@/assets/bird-hero.jpg';
 
 const AnimalsSection = () => {
   const animals = [
@@ -33,9 +33,9 @@ const AnimalsSection = () => {
       description: "Playful primates looking for fruits and treats"
     },
     {
-      name: "Goats",
-      emoji: "🐐",
-      image: goatImage,
+      name: "Birds",
+      emoji: "🐦",
+      image: birdImage,
       description: "Hardy farm animals that bring joy to rural communities"
     }
   ];
