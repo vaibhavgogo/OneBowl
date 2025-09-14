@@ -2,7 +2,7 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Heart, ArrowDown } from 'lucide-react';
 import animalsTogetherImage from '@/assets/animals-together.jpg';
-import lavLogo from '@/assets/lav-logo.png';
+import oneBowlLogo from '@/assets/onebowl-logo.png';
 
 const HeroSection = () => {
   const scrollToAnimals = () => {
@@ -26,8 +26,8 @@ const HeroSection = () => {
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto animate-fade-in">
         <div className="mb-8 flex flex-col items-center gap-4">
           <img 
-            src={lavLogo} 
-            alt="LAV Company Logo" 
+            src={oneBowlLogo} 
+            alt="OneBowl Logo" 
             className="w-20 h-20 md:w-24 md:h-24 object-contain"
           />
           <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-6 py-3 text-white">
@@ -67,12 +67,12 @@ const HeroSection = () => {
         </div>
         
         {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce-gentle">
+        <div className="absolute bottom-4 sm:bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce-gentle">
           <button 
             onClick={scrollToAnimals}
-            className="p-3 rounded-full bg-white/10 backdrop-blur-sm text-white hover:bg-white/20 transition-colors"
+            className="p-2 sm:p-3 rounded-full bg-white/10 backdrop-blur-sm text-white hover:bg-white/20 transition-colors"
           >
-            <ArrowDown className="w-6 h-6" />
+            <ArrowDown className="w-5 h-5 sm:w-6 sm:h-6" />
           </button>
         </div>
       </div>
