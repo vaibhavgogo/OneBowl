@@ -1,10 +1,13 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Heart, ArrowDown } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 import animalsTogetherImage from "@/assets/animals-together.jpg";
 import oneLogo from "@/assets/onebowl-logo.png";
 
 const HomeSection = () => {
+  const navigate = useNavigate();
+
   const scrollToAnimals = () => {
     const animalsSection = document.getElementById("animals-section");
     animalsSection?.scrollIntoView({ behavior: "smooth" });
@@ -66,6 +69,7 @@ const HomeSection = () => {
               size="lg"
               className="animate-scale-in"
               style={{ animationDelay: "0.2s" }}
+              onClick={() => navigate("/about")}
             >
               Learn Our Story
             </Button>
