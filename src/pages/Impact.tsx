@@ -8,10 +8,21 @@ import {
   TrendingUp,
   Award,
 } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 import Navbar from "@/views/Navbar";
 import Footer from "@/views/Footer";
 
 const Impact = () => {
+  const navigate = useNavigate();
+
+  const navigateToAnimals = () => {
+    navigate("/");
+    setTimeout(() => {
+      const animalsSection = document.getElementById("animals-section");
+      animalsSection?.scrollIntoView({ behavior: "smooth" });
+    }, 100);
+  };
+
   const stats = [
     {
       icon: Heart,
@@ -165,7 +176,7 @@ const Impact = () => {
             Your next donation could be the meal that saves a life. Join our
             community of compassionate donors.
           </p>
-          <Button variant="hero" size="lg" className="animate-scale-in">
+          <Button variant="hero" size="lg" className="animate-scale-in" onClick={navigateToAnimals}>
             Make Your Impact
             <Heart className="ml-2 w-5 h-5" />
           </Button>
