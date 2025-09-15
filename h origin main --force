@@ -1,0 +1,27 @@
+* [33m0c18174[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m added
+* [33me99744e[m commit
+* [33m9d7fbee[m Update OneBowl logo
+* [33m688878c[m Update OneBowl logo
+*   [33m0446c65[m Merge pull request #1 from vaibhavgogo/animation
+[32m|[m[33m\[m  
+[32m|[m * [33m6f0fe8c[m[33m ([m[1;31morigin/animation[m[33m)[m added animation for counting up
+* [33m|[m [33m95c4dd8[m Refactor: Update branding and navigation
+[33m|[m[33m/[m  
+* [33m5de83be[m image
+* [33me44dcda[m Add footer and logo
+* [33m5cebd0b[m Add Navbar Pages
+* [33m286e1ec[m Add Navbar for Auth
+* [33ma04fea0[m bird
+*   [33mf63aaf1[m Merge branch 'main' of https://github.com/vaibhavgogo/paw-fect-feed-track
+[34m|[m[35m\[m  
+[34m|[m * [33mff58bff[m Update README.md
+[34m|[m * [33md9198cb[m Update README.md
+* [35m|[m [33m25dec72[m pic
+[35m|[m[35m/[m  
+* [33m521b3f4[m demo
+* [33m3a27e46[m rea commit
+* [33m7cfd317[m delete
+* [33ma816aeb[m commit
+* [33mef839b6[m Update website name and logo
+* [33mef4c62d[m Create landing page
+* [33m85df082[m [skip lovable] Use tech stack vite_react_shadcn_ts_20250728_minor
