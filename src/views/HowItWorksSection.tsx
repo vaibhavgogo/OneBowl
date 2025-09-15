@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
-import { Heart, ShoppingCart, Truck, Camera } from 'lucide-react';
+import { Heart, ShoppingCart, Truck, Camera, MapPin, Award, CreditCard } from 'lucide-react';
 
 const HowItWorksSection = () => {
   const steps = [
@@ -15,14 +15,29 @@ const HowItWorksSection = () => {
       description: "Browse food options perfect for your chosen animal and select the quantity you'd like to donate."
     },
     {
+      icon: CreditCard,
+      title: "💳 Make Your Donation",
+      description: "Secure payment through UPI, PayPal, or Razorpay. Choose to donate anonymously or with your name."
+    },
+    {
       icon: Truck,
       title: "We Deliver",
       description: "Our trusted partners purchase and deliver the food directly to animals in shelters and streets."
     },
     {
+      icon: MapPin,
+      title: "📍 Location Tracking",
+      description: "See exactly where your food was delivered on a map with real-time tracking updates."
+    },
+    {
       icon: Camera,
       title: "See the Impact",
       description: "Receive photos and videos showing your food being delivered and animals being fed."
+    },
+    {
+      icon: Award,
+      title: "🏆 Impact Certificates",
+      description: "Get personalized impact reports and certificates with gold, bronze, and silver medals for your contributions."
     }
   ];
 
@@ -34,11 +49,11 @@ const HowItWorksSection = () => {
             How It Works
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Making a difference is simple. Just four steps between your kindness and a full belly.
+            Making a difference is simple. Just seven steps between your kindness and a full belly.
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {steps.map((step, index) => {
             const IconComponent = step.icon;
             return (
