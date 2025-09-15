@@ -4,6 +4,7 @@ import { Heart, Target, Users, Shield, Globe, Award } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import Navbar from "@/views/Navbar";
 import Footer from "@/views/Footer";
+import PartnerModal from "@/components/PartnerModal";
 
 const About = () => {
   const navigate = useNavigate();
@@ -228,10 +229,12 @@ const About = () => {
               Start Donating
               <Heart className="ml-2 w-5 h-5" />
             </Button>
-            <Button variant="nature" size="lg" className="animate-scale-in">
-              Become a Partner
-              <Users className="ml-2 w-5 h-5" />
-            </Button>
+            <PartnerModal>
+              <Button variant="nature" size="lg" className="animate-scale-in">
+                Become a Partner
+                <Users className="ml-2 w-5 h-5" />
+              </Button>
+            </PartnerModal>
           </div>
         </div>
       </section>
