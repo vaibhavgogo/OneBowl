@@ -1,15 +1,15 @@
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
-import HeroSection from '@/components/HeroSection';
-import AnimalsSection from '@/components/AnimalsSection';
-import StatsSection from '@/components/StatsSection';
-import HowItWorksSection from '@/components/HowItWorksSection';
+import AnimalsSection from "@/views/AnimalsSection";
+import HomeSection from "@/views/HomeSection";
+import HowItWorksSection from "@/views/HowItWorksSection";
+import Navbar from "@/views/Navbar";
+import StatsSection from "@/views/StatsSection";
+import Footer from "@/views/Footer";
 
 const Index = () => {
   return (
     <div className="min-h-screen">
       <Navbar />
-      <HeroSection />
+      <HomeSection />
       <AnimalsSection />
       <HowItWorksSection />
       <StatsSection />

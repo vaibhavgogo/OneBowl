@@ -1,65 +1,75 @@
-import React from 'react';
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
-import { Button } from '@/components/ui/button';
-import { Heart, Users, MapPin, Calendar, TrendingUp, Award } from 'lucide-react';
+import React from "react";
+import { Button } from "@/components/ui/button";
+import {
+  Heart,
+  Users,
+  MapPin,
+  Calendar,
+  TrendingUp,
+  Award,
+} from "lucide-react";
+import Navbar from "@/views/Navbar";
+import Footer from "@/views/Footer";
 
 const Impact = () => {
   const stats = [
     {
       icon: Heart,
-      number: "50,000+",
+      number: "50+",
       label: "Animals Fed",
-      description: "Across dogs, cats, cows, monkeys, and birds"
+      description: "Across dogs, cats, cows, monkeys, and birds",
     },
     {
       icon: Users,
-      number: "12,000+",
+      number: "12+",
       label: "Active Donors",
-      description: "Compassionate people making a difference"
+      description: "Compassionate people making a difference",
     },
     {
       icon: MapPin,
-      number: "150+",
+      number: "15+",
       label: "Cities Covered",
-      description: "Spreading kindness across the nation"
+      description: "Spreading kindness across the nation",
     },
     {
       icon: Calendar,
       number: "365",
       label: "Days Active",
-      description: "Feeding animals every single day"
-    }
+      description: "Feeding animals every single day",
+    },
   ];
 
   const stories = [
     {
-      title: "Street Dogs in Mumbai",
-      location: "Mumbai, Maharashtra",
-      impact: "2,500 meals delivered this month",
+      title: "Street Dogs in Delhi",
+      location: "Najafgarh, Delhi",
+      impact: "20 meals delivered this month",
       image: "/placeholder.svg",
-      description: "Thanks to generous donors, street dogs in Mumbai's busy areas now receive regular nutritious meals."
+      description:
+        "Thanks to generous donors, street dogs in Mumbai's busy areas now receive regular nutritious meals.",
     },
     {
       title: "Temple Cows in Varanasi",
-      location: "Varanasi, Uttar Pradesh", 
+      location: "Varanasi, Uttar Pradesh",
       impact: "500 kg fodder donated weekly",
       image: "/placeholder.svg",
-      description: "Sacred cows near temples receive fresh fodder and care through our community feeding program."
+      description:
+        "Sacred cows near temples receive fresh fodder and care through our community feeding program.",
     },
     {
       title: "Rescue Cats in Bangalore",
       location: "Bangalore, Karnataka",
       impact: "300 cats fed daily",
       image: "/placeholder.svg",
-      description: "Abandoned and rescue cats in Bangalore shelters get proper nutrition and medical care."
-    }
+      description:
+        "Abandoned and rescue cats in Bangalore shelters get proper nutrition and medical care.",
+    },
   ];
 
   return (
     <div className="min-h-screen bg-gradient-subtle">
       <Navbar />
-      
+
       {/* Hero Section */}
       <section className="pt-24 pb-16 px-4">
         <div className="max-w-4xl mx-auto text-center">
@@ -67,7 +77,8 @@ const Impact = () => {
             Our <span className="text-nature-primary">Impact</span>
           </h1>
           <p className="text-xl text-muted-foreground mb-12 max-w-2xl mx-auto animate-fade-in">
-            Every donation creates ripples of compassion. See how your kindness is transforming lives across the country.
+            Every donation creates ripples of compassion. See how your kindness
+            is transforming lives across the country.
           </p>
         </div>
       </section>
@@ -77,7 +88,7 @@ const Impact = () => {
         <div className="max-w-6xl mx-auto">
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
-              <div 
+              <div
                 key={index}
                 className="bg-card rounded-2xl p-6 text-center shadow-soft hover:shadow-warm transition-all duration-300 animate-scale-in"
                 style={{ animationDelay: `${index * 0.1}s` }}
@@ -114,7 +125,7 @@ const Impact = () => {
 
           <div className="grid md:grid-cols-3 gap-8">
             {stories.map((story, index) => (
-              <div 
+              <div
                 key={index}
                 className="bg-card rounded-2xl overflow-hidden shadow-soft hover:shadow-warm transition-all duration-300 animate-fade-in"
                 style={{ animationDelay: `${index * 0.1}s` }}
@@ -151,7 +162,8 @@ const Impact = () => {
             Be Part of This Story
           </h2>
           <p className="text-xl text-muted-foreground mb-8">
-            Your next donation could be the meal that saves a life. Join our community of compassionate donors.
+            Your next donation could be the meal that saves a life. Join our
+            community of compassionate donors.
           </p>
           <Button variant="hero" size="lg" className="animate-scale-in">
             Make Your Impact
