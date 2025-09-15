@@ -1,10 +1,21 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Heart, Target, Users, Shield, Globe, Award } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 import Navbar from "@/views/Navbar";
 import Footer from "@/views/Footer";
 
 const About = () => {
+  const navigate = useNavigate();
+
+  const navigateToAnimals = () => {
+    navigate("/");
+    setTimeout(() => {
+      const animalsSection = document.getElementById("animals-section");
+      animalsSection?.scrollIntoView({ behavior: "smooth" });
+    }, 100);
+  };
+
   const values = [
     {
       icon: Heart,
@@ -92,7 +103,7 @@ const About = () => {
                 delivery. We're not just feeding animals – we're building a
                 community of kindness.
               </p>
-              <Button variant="nature" size="lg" className="animate-scale-in">
+              <Button variant="nature" size="lg" className="animate-scale-in" onClick={navigateToAnimals}>
                 Join Our Mission
                 <Heart className="ml-2 w-5 h-5" />
               </Button>
@@ -213,7 +224,7 @@ const About = () => {
             you in the OneBowl community.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="hero" size="lg" className="animate-scale-in">
+            <Button variant="hero" size="lg" className="animate-scale-in" onClick={navigateToAnimals}>
               Start Donating
               <Heart className="ml-2 w-5 h-5" />
             </Button>
